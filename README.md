@@ -1,20 +1,57 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Rudransh Gujja — Personal Portfolio
 
-# Run and deploy your AI Studio app
+Personal portfolio website for Rudransh Gujja, deployed on Firebase Hosting. A single-page React app with sections for about, projects, hackathons, skills, certifications, and a contact form.
 
-This contains everything you need to run your app locally.
+## Sections
 
-View your app in AI Studio: https://ai.studio/apps/e2efabd3-b519-4ffd-b32a-8c32ead822a5
+- **Navbar / Hero / Footer** — layout chrome
+- **About** — bio
+- **Projects** — selected work
+- **Hackathons** — participation and results
+- **Skills** — technical skills
+- **Certifications** — credentials
+- **Contact** — contact form
 
-## Run Locally
+## Tech stack
 
-**Prerequisites:**  Node.js
+- React + TypeScript, Vite, Tailwind CSS
+- Firebase Hosting for deployment (`.firebaserc` + `firebase.json` configured)
 
+## Run locally
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+
+   ```bash
+   npm install
+   ```
+
+2. Start the dev server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Deploy:
+
+   ```bash
+   npm run build
+   firebase deploy
+   ```
+
+## Project structure
+
+```
+├── src/
+│   ├── App.tsx           # Section composition
+│   ├── components/       # Navbar, Hero, About, Projects, Hackathons,
+│   │                     # Skills, Certifications, Contact, Footer
+│   ├── types.ts          # Shared types
+│   └── index.css         # Tailwind + custom styles
+├── firebase.json         # Hosting config
+└── .firebaserc           # Firebase project alias
+```
+
+## Status
+
+- Deployed via Firebase Hosting (build cache in `.firebase/`)
+- Template-based (Google AI Studio starter) with custom content; no tests, which is reasonable for a static portfolio
