@@ -1,5 +1,7 @@
 # Rudransh Gujja — Personal Portfolio
 
+[![CI](https://github.com/Rudra-ctrl-07/rudransh-personal-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/Rudra-ctrl-07/rudransh-personal-portfolio/actions/workflows/ci.yml)
+
 Personal portfolio website for Rudransh Gujja, deployed on Firebase Hosting. A single-page React app with sections for about, projects, hackathons, skills, certifications, and a contact form.
 
 ## Sections
